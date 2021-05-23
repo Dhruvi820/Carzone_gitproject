@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NX5VQP"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="page_loader"></div>
+
+<!-- Top header start -->
+<header class="top-header bg-active" id="top-header-2">
+  <!--   <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-7">
+                <div class="list-inline">
+                    <a href="tel:+55-4XX-634-7071"><i class="fa fa-phone"></i>+55-4XX-634-7071</a>
+                    <a href="tel:info@themevessel.com"><i class="fa fa-envelope"></i>info@themevessel.com</a>
+                    <a href="tel:info@themevessel.com"><i class="fa fa-clock-o"></i>Mon - Sun: 8:00am - 6:00pm</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-5">
+                <ul class="top-social-media pull-right">
+                    <li>
+                        <a href="login.html" class="sign-in"><i class="fa fa-sign-in"></i> Login</a>
+                    </li>
+                    <li>
+                        <a href="signup.html" class="sign-in"><i class="fa fa-user"></i> Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Top header end -->
+
+<div class="sub-banner overview-bgi">
+     <div class="container breadcrumb-area">
+       <div class="breadcrumb-areas">
+            <h1>About Us</h1>
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li class="active">About Us</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Service center strat -->
+<div class="about-car content-area-5">
+    <div class="container">
+          <div class="row">
+            <div class="col-xl-5 col-lg-6">
+              <div class="about-car-photo">
+                  <div id="carDetailsSlider" class="carousel car-details-sliders slide">
+                        <!-- main slider carousel items -->
+                        <div class="carousel-inner">
+                            <div class="active item carousel-item" data-slide-number="0">
+                                <img src="{% static 'img/car/car-1.jpg' %}" class="img-fluid" alt="slider-car">
+                            </div>
+                            <div class="item carousel-item" data-slide-number="1">
+                                <img src="{% static 'img/car/car-2.jpg' %}" class="img-fluid" alt="slider-car">
+                            </div>
+                            <div class="item carousel-item" data-slide-number="2">
+                                <img src="{% static 'img/car/car-3.jpg' %}" class="img-fluid" alt="slider-car">
+                            </div>
+                        </div>
+                        <!-- main slider carousel nav controls -->
+                        <ul class="carousel-indicators car-properties list-inline nav nav-justified">
+                            <li class="list-inline-item active">
+                                <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#carDetailsSlider">
+                                    <img src="{% static 'img/car/car-1.jpg' %}" class="img-fluid" alt="small-car">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a id="carousel-selector-1" data-slide-to="1" data-target="#carDetailsSlider">
+                                    <img src="{% static 'img/car/car-2.jpg' %}" class="img-fluid" alt="small-car">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a id="carousel-selector-2" data-slide-to="2" data-target="#carDetailsSlider">
+                                    <img src="{% static 'img/car/car-3.jpg' %}" class="img-fluid" alt="small-car">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-7 col-lg-6 align-self-center">
+                <div class="best-used-car">
+                    <h3>Welcome to <span>Car Zone</span></h3>
+                    <p>Carzone is the online motoring portal for buying cars.</p>
+                    <p class="mb-0">
+The portal operates via multiple online platforms including a desktop website and various mobile solutions including Apple and Android applications.
+
+Via our daily interactions with the entire landscape of trusted professional motor dealers and leading motoring manufacturer brands, we provide tools and content that enable Irish consumers to confidently research the second largest purchase they are ever likely to make – a car.
+
+This activity culminates in just under 1 Million serious buyers and sellers coming together on the platform on a monthly basis. During the second half of 2013 alone, over 60 million searches for used cars were carried out on Carzone.ie.
+
+Carzone.ie is not only Ireland’s Ultimate Motoring Marketplace with over 740 million page impressions last year, it’s also an authority in the used car market and this user search data allows an incredible insight on consumer buying trends which is used to support both Trade and Consumer requirements.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service center end -->
+
+
+<!-- Full Page Search -->
+<div id="full-page-search">
+    <button type="button" class="close">×</button>
+    <form action="https://storage.googleapis.com/theme-vessel/carhouse/index.html#" class="search-header">
+        <input type="search" value="" placeholder="type keyword(s) here. Eg: audi, benz etc" />
+        <button type="submit" class="btn btn-sm button-theme">Search</button>
+    </form>
+</div>
+
+
+
+
+
+
+{% endblock %}
